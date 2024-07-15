@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <title>Money Exchanger</title>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+          <h1><strong>Money Exchanger</strong></h1>
+
+            <h2>Cambio de Pesos Chilenos a</h2>
+
+            <div id="datos">
+                <input
+                type="number"
+                placeholder="Ingrese el monto en CLP"
+                id="valorIngresado"
+                />
+                <select name="monedas" id="monedas">
+                    <option value="empty" selected>Seleccione moneda</option>
+                    <option value="dolar">dolar</option>
+                    <option value="euro">euro</option>
+                    <option value="uf">UF</option>
+                    <option value="utm">UTM</option>
+                </select>
+                <div>
+                    <button onclick="realizarCambio()" id="validar">
+                        <strong>Validar</strong>
+                    </button>
+                </div>
+            </div>
+            
+            <label id="resultado"></label>
+
+      </div>
+    </main>
+    <footer>
+      <div class="grafico">
+        <canvas id="myChart"></canvas>
+      </div>
+    </footer>
+
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>

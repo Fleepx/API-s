@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 26rem;
+    background-color:lightsalmon;
+    margin: 5rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.grafico {
+    margin: 2.1rem;
+}
+#datos {
+    display: flex;
+    gap: 1rem;
+}
+#validar {
+    padding: 5px;
+    background-color: darkblue;
+    color: aliceblue;
+}
+#valorRetornado {
+    font-size: 25px;
+}
+h1 {
+    margin-bottom: 1rem;
+}
